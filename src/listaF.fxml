@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="listaFControl">
+    <TableView fx:id="tableFuncionarios" layoutX="14.0" layoutY="14.0" prefHeight="500.0" prefWidth="800.0">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" />
+            <TableColumn fx:id="colNome" text="Nome" />
+            <TableColumn fx:id="colBi" text="BI" />
+            <TableColumn fx:id="colCargo" text="Cargo" />
+            <TableColumn fx:id="colSexo" text="Sexo" />
+            <TableColumn fx:id="colEstadoCivil" text="Estado Civil" />
+            <TableColumn fx:id="colDataNascimento" text="Data Nascimento" />
+            <TableColumn fx:id="colTelefone" text="Telefone" />
+        </columns>
+    </TableView>
+</AnchorPane>

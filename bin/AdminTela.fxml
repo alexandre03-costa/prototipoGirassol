@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" opacity="0.95" prefHeight="850.0" prefWidth="1482.0" style="-fx-background-color: #f3f2ef;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminController">
+   <children>
+      <AnchorPane prefHeight="850.0" prefWidth="240.0" style="-fx-background-color: #13293D;">
+         <children>
+            <ImageView fitHeight="18.0" fitWidth="23.0" layoutX="36.0" layoutY="701.0">
+               <image>
+                  <Image url="@../../../Pojecto%20login/Login%20project/src/img/sair%20(3).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="75.0" layoutY="701.0" style="-fx-text-fill: #ffffff;" text="Sair" textFill="WHITE" />
+            <Label layoutX="63.0" layoutY="339.0" style="-fx-text-fill: #ffffff;" text="Funcionarios" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label layoutX="69.0" layoutY="299.0" prefHeight="18.0" prefWidth="77.0" style="-fx-text-fill: #ffffff;" text="Pacientes" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label layoutX="69.0" layoutY="252.0" prefHeight="18.0" prefWidth="77.0" style="-fx-text-fill: #ffffff;" text="Home" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <ImageView fitHeight="20.0" fitWidth="23.0" layoutX="28.0" layoutY="342.0">
+               <image>
+                  <Image url="@img/icons8-profile-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="23.0" layoutX="24.0" layoutY="250.0">
+               <image>
+                  <Image url="@img/icons8-home-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="23.0" layoutX="28.0" layoutY="297.0">
+               <image>
+                  <Image url="@img/icons8-hospital-wagon-without-a-siren-30.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="100.0" layoutY="117.0">
+               <image>
+                  <Image url="@img/girassol%20(1).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="31.0" layoutY="85.0" style="-fx-text-fill: ffffff;" text="Clinica" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="118.0" style="-fx-text-fill: ffffff;" text="Girass    l" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="241.0" layoutY="-3.0" prefHeight="35.0" prefWidth="1244.0" style="-fx-background-color: #0077B5;">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="14.0" layoutY="2.0">
+               <image>
+                  <Image url="@img/icons8-menu-64.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lb_sair" layoutX="1215.0" layoutY="-2.0" onDragDetected="#close" prefHeight="30.0" prefWidth="14.0" style="-fx-text-fill: ffffff; -fx-cursor: hand;" text="x" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="1149.0" layoutY="-1.0" prefHeight="20.0" prefWidth="14.0" style="-fx-text-fill: ffffff;" text="-" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="-3.0" prefHeight="34.0" prefWidth="125.0" style="-fx-text-fill: ffffff;" text="Menu" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="240.0" layoutY="32.0" prefHeight="79.0" prefWidth="1244.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="1035.0" layoutY="31.0" text="Admin" textFill="#a69e9e">
+               <font>
+                  <Font name="Berlin Sans FB" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="1143.0" layoutY="13.0">
+               <image>
+                  <Image url="@img/do-utilizador%20(4).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="249.0" layoutY="137.0" prefHeight="114.0" prefWidth="272.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20px;">
+         <children>
+            <Label layoutX="73.0" layoutY="17.0" text="Pacientes">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="23.0" layoutX="35.0" layoutY="12.0">
+               <image>
+                  <Image url="@img/paciente.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="162.0" layoutY="51.0" text="40" textFill="#0c7c9e">
+               <font>
+                  <Font name="Berlin Sans FB" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="537.0" layoutY="137.0" prefHeight="114.0" prefWidth="272.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20px;">
+         <children>
+            <Label layoutX="58.0" layoutY="16.0" text="Funcionarios">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font></Label>
+            <ImageView fitHeight="30.0" fitWidth="23.0" layoutX="14.0" layoutY="11.0">
+               <image>
+                  <Image url="@img/pessoas%20(1).png" />
+               </image>
+            </ImageView>
+            <Label fx:id="totFunci" layoutX="195.0" layoutY="59.0" text="40" textFill="#0c7c9e">
+               <font>
+                  <Font name="Berlin Sans FB" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_new" layoutX="41.0" layoutY="66.0" onDragDetected="#abrir_cadastro" prefHeight="18.0" prefWidth="34.0" style="-fx-cursor: hand;" text="novo">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="23.0" layoutX="14.0" layoutY="66.0">
+               <image>
+                  <Image url="@img/novo-documento.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="818.0" layoutY="137.0" prefHeight="114.0" prefWidth="258.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20px;">
+         <children>
+            <Label layoutX="52.0" layoutY="14.0" text="Medicos">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="194.0" layoutY="57.0" text="40" textFill="#0c7c9e">
+               <font>
+                  <Font name="Berlin Sans FB" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="36.0" fitWidth="34.0" layoutX="14.0" layoutY="6.0">
+               <image>
+                  <Image url="@img/vecteezy_doctor-holding-health-form_24595807.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ListView layoutX="249.0" layoutY="289.0" prefHeight="466.0" prefWidth="1100.0" />
+      <AnchorPane layoutX="1090.0" layoutY="137.0" prefHeight="114.0" prefWidth="258.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20px;">
+         <children>
+            <Label layoutX="52.0" layoutY="14.0" text="Medicamentos">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="23.0" layoutX="20.0" layoutY="14.0">
+               <image>
+                  <Image url="@img/icons8-medications-64.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="194.0" layoutY="57.0" text="40" textFill="#0c7c9e">
+               <font>
+                  <Font name="Berlin Sans FB" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableView" layoutX="249.0" layoutY="288.0" onMouseClicked="#PegarDados" prefHeight="544.0" prefWidth="1100.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="40.79998779296875" text="id" />
+          <TableColumn fx:id="nome" minWidth="0.0" prefWidth="170.39996337890625" text="nome" />
+            <TableColumn fx:id="bi" prefWidth="161.5999755859375" text="bi" />
+            <TableColumn fx:id="cargo" prefWidth="163.20001220703125" text="cargo" />
+            <TableColumn fx:id="sexo" minWidth="0.0" prefWidth="80.800048828125" text="sexo" />
+            <TableColumn fx:id="estadoCivil" text="estado civil" />
+            <TableColumn fx:id="dataNascimento" prefWidth="172.79998779296875" text="Data Nacimento" />
+            <TableColumn fx:id="telefone" prefWidth="231.199951171875" text="Telefone" />
+        </columns>
+      </TableView>
+      <Button fx:id="btneditar" layoutX="1370.0" layoutY="157.0" mnemonicParsing="false" onAction="#editar" text="Button" />
+   </children>
+</AnchorPane>
